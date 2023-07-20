@@ -12,7 +12,7 @@ class Solution {
     public ListNode mid(ListNode head){
         ListNode slow=head;
         ListNode fast=head;
-        while(fast!=null && fast.next==null){
+        while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
         }
@@ -24,7 +24,7 @@ class Solution {
         ListNode midNode=mid(head);
         ListNode prev=null;
         ListNode curr=midNode;
-        ListNode next=;
+        ListNode next;
         while(curr!=null){
             next=curr.next;
             curr.next=prev;
